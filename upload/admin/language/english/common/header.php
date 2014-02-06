@@ -67,7 +67,7 @@ $_['text_sale']                        = 'Sales';
 $_['text_shipping']                    = 'Shipping';
 $_['text_setting']                     = 'Settings';
 $_['text_stock_status']                = 'Stock Statuses';
-$_['text_support']                     = 'Support Forum';
+$_['text_support']                     = 'Support Forum</a></li><li class="support"><a onclick="window.open(\'http://www.dnono.com\');">'. DNONO_SUPPORT;
 $_['text_system']                      = 'System';
 $_['text_tax']                         = 'Taxes';
 $_['text_tax_class']                   = 'Tax Classes';

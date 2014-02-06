@@ -296,10 +296,10 @@ CREATE TABLE `oc_attribute_group_description` (
 --
 
 INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id`, `name`) VALUES
-(3, 1, 'Memory'),
-(4, 1, 'Technical'),
-(5, 1, 'Motherboard'),
-(6, 1, 'Processor');
+(3, 1, '記憶體'),
+(4, 1, '技術'),
+(5, 1, '主機板'),
+(6, 1, '處理器');
 
 -- --------------------------------------------------------
 
@@ -469,18 +469,18 @@ CREATE TABLE `oc_category_description` (
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`) VALUES
-(28, 1, 'Monitors', '', '', ''),
-(33, 1, 'Cameras', '', '', ''),
-(32, 1, 'Web Cameras', '', '', ''),
-(31, 1, 'Scanners', '', '', ''),
-(30, 1, 'Printers', '', '', ''),
-(29, 1, 'Mice and Trackballs', '', '', ''),
-(27, 1, 'Mac', '', '', ''),
-(26, 1, 'PC', '', '', ''),
-(17, 1, 'Software', '', '', ''),
-(25, 1, 'Components', '', '', ''),
-(24, 1, 'Phones &amp; PDAs', '', '', ''),
-(20, 1, 'Desktops', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', 'Example of category description', ''),
+(28, 1, '螢幕', '', '', ''),
+(33, 1, '照相機', '', '', ''),
+(32, 1, '網路攝影機', '', '', ''),
+(31, 1, '掃描器', '', '', ''),
+(30, 1, '印表機', '', '', ''),
+(29, 1, '軌跡球', '', '', ''),
+(27, 1, '蘋果電腦', '', '', ''),
+(26, 1, '個人電腦', '', '', ''),
+(17, 1, '軟體', '', '', ''),
+(25, 1, '電腦週邊', '', '', ''),
+(24, 1, '行動電話', '', '', ''),
+(20, 1, '桌上型電腦', '&lt;p&gt;\r\n	這是目錄內容的範例&lt;/p&gt;\r\n', '這是目錄內容的範例', ''),
 (35, 1, 'test 1', '', '', ''),
 (36, 1, 'test 2', '', '', ''),
 (37, 1, 'test 5', '', '', ''),
@@ -490,11 +490,11 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (41, 1, 'test 8', '', '', ''),
 (42, 1, 'test 9', '', '', ''),
 (43, 1, 'test 11', '', '', ''),
-(34, 1, 'MP3 Players', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', ''),
-(18, 1, 'Laptops &amp; Notebooks', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', ''),
+(34, 1, 'MP3 播放器', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', ''),
+(18, 1, '筆記型電腦', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', ''),
 (44, 1, 'test 12', '', '', ''),
-(45, 1, 'Windows', '', '', ''),
-(46, 1, 'Macs', '', '', ''),
+(45, 1, '視窗作業系統', '', '', ''),
+(46, 1, '蘋果作業系統', '', '', ''),
 (47, 1, 'test 15', '', '', ''),
 (48, 1, 'test 16', '', '', ''),
 (49, 1, 'test 17', '', '', ''),
@@ -505,7 +505,7 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (54, 1, 'test 22', '', '', ''),
 (55, 1, 'test 23', '', '', ''),
 (56, 1, 'test 24', '', '', ''),
-(57, 1, 'Tablets', '', '', ''),
+(57, 1, '平板電腦', '', '', ''),
 (58, 1, 'test 25', '', '', '');
 
 -- --------------------------------------------------------
@@ -913,7 +913,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (203, 'Sweden', 'SE', 'SWE', '{company}\r\n{firstname} {lastname}\r\n{address_1}\r\n{address_2}\r\n{postcode} {city}\r\n{country}', 1, 1),
 (204, 'Switzerland', 'CH', 'CHE', '', 0, 1),
 (205, 'Syrian Arab Republic', 'SY', 'SYR', '', 0, 1),
-(206, 'Taiwan', 'TW', 'TWN', '', 0, 1),
+(206, '台灣', 'TW', 'TWN', '', 0, 1),
 (207, 'Tajikistan', 'TJ', 'TJK', '', 0, 1),
 (208, 'Tanzania, United Republic of', 'TZ', 'TZA', '', 0, 1),
 (209, 'Thailand', 'TH', 'THA', '', 0, 1),
@@ -988,9 +988,9 @@ CREATE TABLE `oc_coupon` (
 --
 
 INSERT INTO `oc_coupon` (`coupon_id`, `name`, `code`, `type`, `discount`, `logged`, `shipping`, `total`, `date_start`, `date_end`, `uses_total`, `uses_customer`, `status`, `date_added`) VALUES
-(4, '-10% Discount', '2222', 'P', '10.0000', 0, 0, '0.0000', '2011-01-01', '2012-01-01', 10, '10', 1, '2009-01-27 13:55:03'),
-(5, 'Free Shipping', '3333', 'P', '0.0000', 0, 1, '100.0000', '2009-03-01', '2009-08-31', 10, '10', 1, '2009-03-14 21:13:53'),
-(6, '-10.00 Discount', '1111', 'F', '10.0000', 0, 0, '10.0000', '1970-11-01', '2020-11-01', 100000, '10000', 1, '2009-03-14 21:15:18');
+(4, '折抵10%', '2222', 'P', '10.0000', 0, 0, '0.0000', '2011-01-01', '2012-01-01', 10, '10', 1, '2009-01-27 13:55:03'),
+(5, '免費配送', '3333', 'P', '0.0000', 0, 1, '100.0000', '2009-03-01', '2009-08-31', 10, '10', 1, '2009-03-14 21:13:53'),
+(6, '折抵10元', '1111', 'F', '10.0000', 0, 0, '10.0000', '1970-11-01', '2020-11-01', 100000, '10000', 1, '2009-03-14 21:15:18');
 
 -- --------------------------------------------------------
 
@@ -1073,9 +1073,12 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.61979997, 1, '2011-07-16 10:30:52'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2011-07-16 16:55:46'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.70660001, 1, '2011-07-16 10:30:52');
+(1, '新台幣', 'TWD', 'NT', '', '0', 1, 1, '2010-04-06 22:00:54'),
+(2, '人民幣', 'CNY', '¥', '', '2', 0.21380, 1, '2010-04-06 22:00:54'),
+(3, '港幣', 'HKD', 'HK', '', '2', 0.24482, 1, '2010-04-06 22:00:54'),
+(4, '英鎊', 'GBP', '£', '', '2', 0.019850, 1, '2010-04-06 22:00:54'),
+(5, '美元', 'USD', '$', '', '2', 0.031526, 1, '2010-04-06 22:00:54'),
+(6, '歐元', 'EUR', '', '€', '2', 0.023934, 1, '2010-04-06 22:00:54');
 
 -- --------------------------------------------------------
 
@@ -1603,10 +1606,10 @@ CREATE TABLE `oc_information_description` (
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`) VALUES
-(4, 1, 'About Us', '&lt;p&gt;\r\n	About Us&lt;/p&gt;\r\n'),
-(5, 1, 'Terms &amp; Conditions', '&lt;p&gt;\r\n	Terms &amp;amp; Conditions&lt;/p&gt;\r\n'),
-(3, 1, 'Privacy Policy', '&lt;p&gt;\r\n	Privacy Policy&lt;/p&gt;\r\n'),
-(6, 1, 'Delivery Information', '&lt;p&gt;\r\n	Delivery Information&lt;/p&gt;\r\n');
+(4, 1, '關於我們', '&lt;p&gt;\r\n	關於我們&lt;/p&gt;\r\n'),
+(5, 1, '政策 &amp; 條款', '&lt;p&gt;\r\n	政策 &amp; 條款&lt;/p&gt;\r\n'),
+(3, 1, '隱私權聲明', '&lt;p&gt;\r\n	隱私權聲明&lt;/p&gt;\r\n'),
+(6, 1, '配送說明', '&lt;p&gt;\r\n	配送說明&lt;/p&gt;\r\n');
 
 -- --------------------------------------------------------
 
@@ -1676,7 +1679,7 @@ CREATE TABLE `oc_language` (
 --
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `filename`, `sort_order`, `status`) VALUES
-(1, 'English', 'en', 'en_US.UTF-8,en_US,en-gb,english', 'gb.png', 'english', 'english', 1, 1);
+(1, '繁體中文', 'zh-TW', 'zh_TW.utf-8,zh-tw,taiwan', 'tw.png', 'zh-TW', 'zh-TW', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -1696,17 +1699,17 @@ CREATE TABLE `oc_layout` (
 --
 
 INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
-(1, 'Home'),
-(2, 'Product'),
-(3, 'Category'),
-(4, 'Default'),
-(5, 'Manufacturer'),
-(6, 'Account'),
-(7, 'Checkout'),
-(8, 'Contact'),
-(9, 'Sitemap'),
-(10, 'Affiliate'),
-(11, 'Information');
+(1, '首頁(Home)'),
+(2, '商品(Product)'),
+(3, '目錄(Category)'),
+(4, '預設(Default)'),
+(5, '品牌(Manufacturer)'),
+(6, '帳戶(Account)'),
+(7, '結帳(Checkout)'),
+(8, '聯絡(Contact)'),
+(9, '網站導覽(Sitemap)'),
+(10, '推薦帳戶(Affiliate)'),
+(11, '商店訊息(Information)');
 
 -- --------------------------------------------------------
 
@@ -1781,9 +1784,9 @@ CREATE TABLE `oc_length_class_description` (
 --
 
 INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `title`, `unit`) VALUES
-(1, 1, 'Centimeter', 'cm'),
-(2, 1, 'Millimeter', 'mm'),
-(3, 1, 'Inch', 'in');
+(1, 1, '公分', 'cm'),
+(2, 1, '公厘', 'mm'),
+(3, 1, '英吋', 'in');
 
 -- --------------------------------------------------------
 
@@ -1959,10 +1962,10 @@ INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `op
 (45, 1, 2, 'Checkbox 4'),
 (44, 1, 2, 'Checkbox 3'),
 (31, 1, 1, 'Medium'),
-(42, 1, 5, 'Yellow'),
-(41, 1, 5, 'Green'),
-(39, 1, 5, 'Red'),
-(40, 1, 5, 'Blue'),
+(42, 1, 5, '黃色'),
+(41, 1, 5, '綠色'),
+(39, 1, 5, '紅色'),
+(40, 1, 5, '藍色'),
 (23, 1, 2, 'Checkbox 1'),
 (24, 1, 2, 'Checkbox 2'),
 (48, 1, 11, 'Large'),
@@ -2235,20 +2238,20 @@ CREATE TABLE `oc_order_status` (
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
-(2, 1, 'Processing'),
-(3, 1, 'Shipped'),
-(7, 1, 'Canceled'),
-(5, 1, 'Complete'),
-(8, 1, 'Denied'),
-(9, 1, 'Canceled Reversal'),
-(10, 1, 'Failed'),
-(11, 1, 'Refunded'),
+(1, 1, '待處理'),
+(2, 1, '處理中'),
+(3, 1, '已配送'),
+(7, 1, '已取消'),
+(5, 1, '已完成'),
+(8, 1, '已拒絕'),
+(9, 1, '取消恢復'),
+(10, 1, '失敗'),
+(11, 1, '已退款'),
 (12, 1, 'Reversed'),
-(13, 1, 'Chargeback'),
-(1, 1, 'Pending'),
-(16, 1, 'Voided'),
-(15, 1, 'Processed'),
-(14, 1, 'Expired');
+(13, 1, '已扣款'),
+(14, 1, '過期'),
+(15, 1, '已處理'),
+(16, 1, '作廢');
 
 -- --------------------------------------------------------
 
@@ -2930,9 +2933,9 @@ CREATE TABLE `oc_return_action` (
 --
 
 INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
-(1, 1, 'Refunded'),
-(2, 1, 'Credit Issued'),
-(3, 1, 'Replacement Sent');
+(1, 1, '退款'),
+(2, 1, '退至信用帳戶'),
+(3, 1, '更換商品');
 
 -- --------------------------------------------------------
 
@@ -2974,11 +2977,11 @@ CREATE TABLE `oc_return_reason` (
 --
 
 INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES
-(1, 1, 'Dead On Arrival'),
-(2, 1, 'Received Wrong Item'),
-(3, 1, 'Order Error'),
-(4, 1, 'Faulty, please supply details'),
-(5, 1, 'Other, please supply details');
+(1, 1, '商品運送途中已毀損'),
+(2, 1, '商品不符'),
+(3, 1, '訂單有誤'),
+(4, 1, '故障, 請詳述'),
+(5, 1, '其它, 請詳述');
 
 -- --------------------------------------------------------
 
@@ -2999,9 +3002,9 @@ CREATE TABLE `oc_return_status` (
 --
 
 INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUES
-(1, 1, 'Pending'),
-(3, 1, 'Complete'),
-(2, 1, 'Awaiting Products');
+(1, 1, '待處理'),
+(3, 1, '完成'),
+(2, 1, '等待商品到貨');
 
 -- --------------------------------------------------------
 
@@ -3157,7 +3160,7 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (104, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
 (105, 0, 'config', 'config_weight_class_id', '1', 0),
 (106, 0, 'config', 'config_currency_auto', '1', 0),
-(107, 0, 'config', 'config_currency', 'USD', 0),
+(107, 0, 'config', 'config_currency', 'TWD', 0),
 (108, 0, 'slideshow', 'slideshow_module', 'a:1:{i:0;a:8:{s:9:"banner_id";s:1:"7";s:5:"width";s:3:"980";s:6:"height";s:3:"280";s:11:"resize_type";s:7:"default";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (109, 0, 'banner', 'banner_module', 'a:1:{i:0;a:8:{s:9:"banner_id";s:1:"6";s:5:"width";s:3:"182";s:6:"height";s:3:"182";s:11:"resize_type";s:7:"default";s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
 (110, 0, 'config', 'config_name', 'Your Store', 0),
@@ -3170,10 +3173,10 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (117, 0, 'config', 'config_meta_description', 'My Store', 0),
 (118, 0, 'config', 'config_template', 'default', 0),
 (119, 0, 'config', 'config_layout_id', '4', 0),
-(120, 0, 'config', 'config_country_id', '222', 0),
-(121, 0, 'config', 'config_zone_id', '3563', 0),
-(122, 0, 'config', 'config_language', 'en', 0),
-(123, 0, 'config', 'config_admin_language', 'en', 0),
+(120, 0, 'config', 'config_country_id', '206', 0),
+(121, 0, 'config', 'config_zone_id', '3135', 0),
+(122, 0, 'config', 'config_language', 'zh-TW', 0),
+(123, 0, 'config', 'config_admin_language', 'zh-TW', 0),
 (124, 0, 'config', 'config_order_edit', '100', 0),
 (125, 0, 'config', 'config_voucher_min', '1', 0),
 (126, 0, 'config', 'config_voucher_max', '1000', 0),
@@ -3201,10 +3204,10 @@ CREATE TABLE `oc_stock_status` (
 --
 
 INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
-(7, 1, 'In Stock'),
-(8, 1, 'Pre-Order'),
-(5, 1, 'Out Of Stock'),
-(6, 1, '2 - 3 Days');
+(5, 1, '缺貨'),
+(6, 1, '等待2 - 3天'),
+(7, 1, '有貨'),
+(8, 1, '預購');
 
 -- --------------------------------------------------------
 
@@ -3398,8 +3401,8 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Top Administrator', 'a:2:{s:6:"access";a:146:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";}s:6:"modify";a:146:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";}}'),
-(10, 'Demonstration', '');
+(1, '最高權限管理人員', 'a:2:{s:6:"access";a:148:{i:0;s:14:"amazon/listing";i:1;s:14:"amazon/product";i:2;s:16:"amazonus/listing";i:3;s:16:"amazonus/product";i:4;s:17:"catalog/attribute";i:5;s:23:"catalog/attribute_group";i:6;s:16:"catalog/category";i:7;s:16:"catalog/download";i:8;s:14:"catalog/filter";i:9;s:19:"catalog/information";i:10;s:20:"catalog/manufacturer";i:11;s:14:"catalog/option";i:12;s:15:"catalog/product";i:13;s:15:"catalog/profile";i:14;s:14:"catalog/review";i:15;s:18:"common/filemanager";i:16;s:13:"design/banner";i:17;s:19:"design/custom_field";i:18;s:13:"design/layout";i:19;s:12:"ebay/profile";i:20;s:13:"ebay/template";i:21;s:14:"extension/feed";i:22;s:17:"extension/manager";i:23;s:16:"extension/module";i:24;s:17:"extension/openbay";i:25;s:17:"extension/payment";i:26;s:18:"extension/shipping";i:27;s:15:"extension/total";i:28;s:16:"feed/google_base";i:29;s:19:"feed/google_sitemap";i:30;s:20:"localisation/country";i:31;s:21:"localisation/currency";i:32;s:21:"localisation/geo_zone";i:33;s:21:"localisation/language";i:34;s:25:"localisation/length_class";i:35;s:25:"localisation/order_status";i:36;s:26:"localisation/return_action";i:37;s:26:"localisation/return_reason";i:38;s:26:"localisation/return_status";i:39;s:25:"localisation/stock_status";i:40;s:22:"localisation/tax_class";i:41;s:21:"localisation/tax_rate";i:42;s:25:"localisation/weight_class";i:43;s:17:"localisation/zone";i:44;s:14:"module/account";i:45;s:16:"module/affiliate";i:46;s:29:"module/amazon_checkout_layout";i:47;s:13:"module/banner";i:48;s:17:"module/bestseller";i:49;s:15:"module/carousel";i:50;s:15:"module/category";i:51;s:18:"module/ebaydisplay";i:52;s:15:"module/featured";i:53;s:13:"module/filter";i:54;s:18:"module/google_talk";i:55;s:18:"module/information";i:56;s:13:"module/latest";i:57;s:16:"module/pp_layout";i:58;s:16:"module/slideshow";i:59;s:14:"module/special";i:60;s:12:"module/store";i:61;s:14:"module/welcome";i:62;s:14:"openbay/amazon";i:63;s:16:"openbay/amazonus";i:64;s:15:"openbay/openbay";i:65;s:12:"openbay/play";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:10:"play/order";i:95;s:12:"play/product";i:96;s:27:"report/affiliate_commission";i:97;s:22:"report/customer_credit";i:98;s:22:"report/customer_online";i:99;s:21:"report/customer_order";i:100;s:22:"report/customer_reward";i:101;s:24:"report/product_purchased";i:102;s:21:"report/product_viewed";i:103;s:18:"report/sale_coupon";i:104;s:17:"report/sale_order";i:105;s:18:"report/sale_return";i:106;s:20:"report/sale_shipping";i:107;s:15:"report/sale_tax";i:108;s:14:"sale/affiliate";i:109;s:12:"sale/contact";i:110;s:11:"sale/coupon";i:111;s:13:"sale/customer";i:112;s:20:"sale/customer_ban_ip";i:113;s:19:"sale/customer_group";i:114;s:10:"sale/order";i:115;s:14:"sale/recurring";i:116;s:11:"sale/return";i:117;s:12:"sale/voucher";i:118;s:18:"sale/voucher_theme";i:119;s:15:"setting/setting";i:120;s:13:"setting/store";i:121;s:16:"shipping/auspost";i:122;s:17:"shipping/citylink";i:123;s:14:"shipping/fedex";i:124;s:13:"shipping/flat";i:125;s:13:"shipping/free";i:126;s:13:"shipping/item";i:127;s:23:"shipping/parcelforce_48";i:128;s:15:"shipping/pickup";i:129;s:19:"shipping/royal_mail";i:130;s:12:"shipping/ups";i:131;s:13:"shipping/usps";i:132;s:15:"shipping/weight";i:133;s:11:"tool/backup";i:134;s:14:"tool/error_log";i:135;s:12:"total/coupon";i:136;s:12:"total/credit";i:137;s:14:"total/handling";i:138;s:16:"total/klarna_fee";i:139;s:19:"total/low_order_fee";i:140;s:12:"total/reward";i:141;s:14:"total/shipping";i:142;s:15:"total/sub_total";i:143;s:9:"total/tax";i:144;s:11:"total/total";i:145;s:13:"total/voucher";i:146;s:9:"user/user";i:147;s:20:"user/user_permission";}s:6:"modify";a:148:{i:0;s:14:"amazon/listing";i:1;s:14:"amazon/product";i:2;s:16:"amazonus/listing";i:3;s:16:"amazonus/product";i:4;s:17:"catalog/attribute";i:5;s:23:"catalog/attribute_group";i:6;s:16:"catalog/category";i:7;s:16:"catalog/download";i:8;s:14:"catalog/filter";i:9;s:19:"catalog/information";i:10;s:20:"catalog/manufacturer";i:11;s:14:"catalog/option";i:12;s:15:"catalog/product";i:13;s:15:"catalog/profile";i:14;s:14:"catalog/review";i:15;s:18:"common/filemanager";i:16;s:13:"design/banner";i:17;s:19:"design/custom_field";i:18;s:13:"design/layout";i:19;s:12:"ebay/profile";i:20;s:13:"ebay/template";i:21;s:14:"extension/feed";i:22;s:17:"extension/manager";i:23;s:16:"extension/module";i:24;s:17:"extension/openbay";i:25;s:17:"extension/payment";i:26;s:18:"extension/shipping";i:27;s:15:"extension/total";i:28;s:16:"feed/google_base";i:29;s:19:"feed/google_sitemap";i:30;s:20:"localisation/country";i:31;s:21:"localisation/currency";i:32;s:21:"localisation/geo_zone";i:33;s:21:"localisation/language";i:34;s:25:"localisation/length_class";i:35;s:25:"localisation/order_status";i:36;s:26:"localisation/return_action";i:37;s:26:"localisation/return_reason";i:38;s:26:"localisation/return_status";i:39;s:25:"localisation/stock_status";i:40;s:22:"localisation/tax_class";i:41;s:21:"localisation/tax_rate";i:42;s:25:"localisation/weight_class";i:43;s:17:"localisation/zone";i:44;s:14:"module/account";i:45;s:16:"module/affiliate";i:46;s:29:"module/amazon_checkout_layout";i:47;s:13:"module/banner";i:48;s:17:"module/bestseller";i:49;s:15:"module/carousel";i:50;s:15:"module/category";i:51;s:18:"module/ebaydisplay";i:52;s:15:"module/featured";i:53;s:13:"module/filter";i:54;s:18:"module/google_talk";i:55;s:18:"module/information";i:56;s:13:"module/latest";i:57;s:16:"module/pp_layout";i:58;s:16:"module/slideshow";i:59;s:14:"module/special";i:60;s:12:"module/store";i:61;s:14:"module/welcome";i:62;s:14:"openbay/amazon";i:63;s:16:"openbay/amazonus";i:64;s:15:"openbay/openbay";i:65;s:12:"openbay/play";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:10:"play/order";i:95;s:12:"play/product";i:96;s:27:"report/affiliate_commission";i:97;s:22:"report/customer_credit";i:98;s:22:"report/customer_online";i:99;s:21:"report/customer_order";i:100;s:22:"report/customer_reward";i:101;s:24:"report/product_purchased";i:102;s:21:"report/product_viewed";i:103;s:18:"report/sale_coupon";i:104;s:17:"report/sale_order";i:105;s:18:"report/sale_return";i:106;s:20:"report/sale_shipping";i:107;s:15:"report/sale_tax";i:108;s:14:"sale/affiliate";i:109;s:12:"sale/contact";i:110;s:11:"sale/coupon";i:111;s:13:"sale/customer";i:112;s:20:"sale/customer_ban_ip";i:113;s:19:"sale/customer_group";i:114;s:10:"sale/order";i:115;s:14:"sale/recurring";i:116;s:11:"sale/return";i:117;s:12:"sale/voucher";i:118;s:18:"sale/voucher_theme";i:119;s:15:"setting/setting";i:120;s:13:"setting/store";i:121;s:16:"shipping/auspost";i:122;s:17:"shipping/citylink";i:123;s:14:"shipping/fedex";i:124;s:13:"shipping/flat";i:125;s:13:"shipping/free";i:126;s:13:"shipping/item";i:127;s:23:"shipping/parcelforce_48";i:128;s:15:"shipping/pickup";i:129;s:19:"shipping/royal_mail";i:130;s:12:"shipping/ups";i:131;s:13:"shipping/usps";i:132;s:15:"shipping/weight";i:133;s:11:"tool/backup";i:134;s:14:"tool/error_log";i:135;s:12:"total/coupon";i:136;s:12:"total/credit";i:137;s:14:"total/handling";i:138;s:16:"total/klarna_fee";i:139;s:19:"total/low_order_fee";i:140;s:12:"total/reward";i:141;s:14:"total/shipping";i:142;s:15:"total/sub_total";i:143;s:9:"total/tax";i:144;s:11:"total/total";i:145;s:13:"total/voucher";i:146;s:9:"user/user";i:147;s:20:"user/user_permission";}}'),
+(10, '一般管理人員', '');
 
 -- --------------------------------------------------------
 
@@ -3491,9 +3494,9 @@ CREATE TABLE `oc_voucher_theme_description` (
 --
 
 INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `name`) VALUES
-(6, 1, 'Christmas'),
-(7, 1, 'Birthday'),
-(8, 1, 'General');
+(6, 1, '聖誕節'),
+(7, 1, '生日'),
+(8, 1, '一般');
 
 -- --------------------------------------------------------
 
@@ -3538,10 +3541,10 @@ CREATE TABLE `oc_weight_class_description` (
 --
 
 INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `title`, `unit`) VALUES
-(1, 1, 'Kilogram', 'kg'),
-(2, 1, 'Gram', 'g'),
-(5, 1, 'Pound ', 'lb'),
-(6, 1, 'Ounce', 'oz');
+(1, 1, '公斤', 'kg'),
+(2, 1, '公克', 'g'),
+(5, 1, '磅 ', 'lb'),
+(6, 1, '盎司', 'oz');
 
 -- --------------------------------------------------------
 
@@ -6677,31 +6680,28 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `code`, `name`, `status`) VALUES
 (3132, 205, 'ID', 'Idlib', 1),
 (3133, 205, 'RD', 'Rif Dimashq', 1),
 (3134, 205, 'TA', 'Tartus', 1),
-(3135, 206, 'CH', 'Chang-hua', 1),
-(3136, 206, 'CI', 'Chia-i', 1),
-(3137, 206, 'HS', 'Hsin-chu', 1),
-(3138, 206, 'HL', 'Hua-lien', 1),
-(3139, 206, 'IL', 'I-lan', 1),
-(3140, 206, 'KH', 'Kao-hsiung county', 1),
-(3141, 206, 'KM', 'Kin-men', 1),
-(3142, 206, 'LC', 'Lien-chiang', 1),
-(3143, 206, 'ML', 'Miao-li', 1),
-(3144, 206, 'NT', 'Nan-t''ou', 1),
-(3145, 206, 'PH', 'P''eng-hu', 1),
-(3146, 206, 'PT', 'P''ing-tung', 1),
-(3147, 206, 'TG', 'T''ai-chung', 1),
-(3148, 206, 'TA', 'T''ai-nan', 1),
-(3149, 206, 'TP', 'T''ai-pei county', 1),
-(3150, 206, 'TT', 'T''ai-tung', 1),
-(3151, 206, 'TY', 'T''ao-yuan', 1),
-(3152, 206, 'YL', 'Yun-lin', 1),
-(3153, 206, 'CC', 'Chia-i city', 1),
-(3154, 206, 'CL', 'Chi-lung', 1),
-(3155, 206, 'HC', 'Hsin-chu', 1),
-(3156, 206, 'TH', 'T''ai-chung', 1),
-(3157, 206, 'TN', 'T''ai-nan', 1),
-(3158, 206, 'KC', 'Kao-hsiung city', 1),
-(3159, 206, 'TC', 'T''ai-pei city', 1),
+(3135, 206, 'TPC', '台北市', 1),
+(3136, 206, 'KLC', '基隆市', 1),
+(3137, 206, 'NPC', '新北市', 1),
+(3138, 206, 'YL', '宜蘭縣', 1),
+(3139, 206, 'HCC', '新竹市', 1),
+(3140, 206, 'HC', '新竹縣', 1),
+(3141, 206, 'TY', '桃園縣', 1),
+(3142, 206, 'ML', '苗栗縣', 1),
+(3143, 206, 'TCC', '台中市', 1),
+(3144, 206, 'CH', '彰化縣', 1),
+(3145, 206, 'NT', '南投縣', 1),
+(3146, 206, 'CYC', '嘉義市', 1),
+(3147, 206, 'CY', '嘉義縣', 1),
+(3148, 206, 'YLI', '雲林縣', 1),
+(3149, 206, 'TNC', '台南市', 1),
+(3150, 206, 'KHC', '高雄市', 1),
+(3151, 206, 'PH', '澎湖縣', 1),
+(3152, 206, 'PT', '屏東縣', 1),
+(3153, 206, 'TT', '台東縣', 1),
+(3154, 206, 'HL', '花蓮縣', 1),
+(3155, 206, 'KM', '金門縣', 1),
+(3156, 206, 'LC', '連江縣', 1),
 (3160, 207, 'GB', 'Gorno-Badakhstan', 1),
 (3161, 207, 'KT', 'Khatlon', 1),
 (3162, 207, 'SU', 'Sughd', 1),

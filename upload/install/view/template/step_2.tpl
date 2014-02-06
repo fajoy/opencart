@@ -1,29 +1,33 @@
 <?php echo $header; ?>
-<h1>Step 2 - Pre-Installation</h1>
+<h1>步驟 2 - 系統</h1>
 <div id="column-right">
   <ul>
-    <li>License</li>
-    <li><b>Pre-Installation</b></li>
-    <li>Configuration</li>
-    <li>Finished</li>
+    <li>授權</li>
+    <li><b>系統</b></li>
+    <li>配置</li>
+    <li>完成</li>
   </ul>
+	<div style="text-align:center;margin-top:150px;border:#555555 1px solid;padding:10px 0;"><a href="http://www.dnono.com/" title="dnono" ><img src="view/image/dnono.png" alt="dnono" title="dnono" width="140" height="50" /></a><br /><br />
+<a href="http://www.dnono.com/" title="dnono" > 中文版提供者</a>&nbsp;&nbsp;
+<a href="http://blog.dnono.com/" title="dnono" > 部落格 </a>
+   </div>
 </div>
 <div id="content">
   <?php if ($error_warning) { ?>
   <div class="warning"><?php echo $error_warning; ?></div>
   <?php } ?>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-    <p>1. Please configure your PHP settings to match requirements listed below.</p>
+    <p>1. 請調整你的PHP設置，符合下列要求<span style="color:#ADADAD;">(如有疑問，可請您的主機商協助確認)</span></p>
     <fieldset>
       <table>
         <tr>
-          <th width="35%" align="left"><b>PHP Settings</b></th>
-          <th width="25%" align="left"><b>Current Settings</b></th>
-          <th width="25%" align="left"><b>Required Settings</b></th>
-          <th width="15%" align="center"><b>Status</b></th>
+          <th width="35%" align="left"><b>PHP設定</b></th>
+          <th width="25%" align="left"><b>目前設定</b></th>
+          <th width="25%" align="left"><b>系統要求</b></th>
+          <th width="15%" align="center"><b>狀態</b></th>
         </tr>
         <tr>
-          <td>PHP Version:</td>
+          <td>PHP 版本:</td>
           <td><?php echo phpversion(); ?></td>
           <td>5.0+</td>
           <td align="center"><?php echo (phpversion() >= '5.0') ? '<img src="view/image/good.png" alt="Good" />' : '<img src="view/image/bad.png" alt="Bad" />'; ?></td>
@@ -54,14 +58,14 @@
         </tr>
       </table>
     </fieldset>
-    <p>2. Please make sure the PHP extensions listed below are installed.</p>
+    <p>2. 請確定下列PHP擴充模組已安裝<span style="color:#ADADAD;">(如有疑問，可請您的主機商協助確認)</span></p>
     <fieldset>
       <table>
         <tr>
-          <th width="35%" align="left"><b>Extension</b></th>
-          <th width="25%" align="left"><b>Current Settings</b></th>
-          <th width="25%" align="left"><b>Required Settings</b></th>
-          <th width="15%" align="center"><b>Status</b></th>
+          <th width="35%" align="left"><b>模組名稱</b></th>
+          <th width="25%" align="left"><b>目前設定</b></th>
+          <th width="25%" align="left"><b>系統要求</b></th>
+          <th width="15%" align="center"><b>狀態</b></th>
         </tr>
         <tr>
           <td>MySQL:</td>
@@ -95,74 +99,74 @@
         </tr>
       </table>
     </fieldset>
-    <p>3. Please make sure you have set the correct permissions on the files list below.</p>
+    <p>3. 請確定下列檔案已設定為可寫入的檔案權限<span style="color:#ADADAD;">(請先確定已將下列文件夾內的config-dist.php檔案更名為config.php)</span></p>
     <fieldset>
       <table>
         <tr>
-          <th align="left"><b>Files</b></th>
-          <th align="left"><b>Status</b></th>
+          <th align="left"><b>檔案</b></th>
+          <th align="left"><b>狀態</b></th>
         </tr>
         <tr>
           <td><?php echo $config_catalog; ?></td>
           <td><?php if (!file_exists($config_catalog)) { ?>
-            <span class="bad">Missing</span>
+            <span class="bad">檔案遺失</span>
             <?php } elseif (!is_writable($config_catalog)) { ?>
-            <span class="bad">Unwritable</span>
+            <span class="bad">不能寫入</span>
           <?php } else { ?>
-          <span class="good">Writable</span>
+          <span class="good">可寫入</span>
           <?php } ?>
             </td>
         </tr>
         <tr>
           <td><?php echo $config_admin; ?></td>
           <td><?php if (!file_exists($config_admin)) { ?>
-            <span class="bad">Missing</span>
+            <span class="bad">檔案遺失</span>
             <?php } elseif (!is_writable($config_admin)) { ?>
-            <span class="bad">Unwritable</span>
+            <span class="bad">不能寫入</span>
           <?php } else { ?>
-          <span class="good">Writable</span>
+          <span class="good">可寫入</span>
           <?php } ?>
              </td>
         </tr>
       </table>
     </fieldset>
-    <p>4. Please make sure you have set the correct permissions on the directories list below.</p>
+    <p>4. 請確定下列文件夾已設定為可寫入的檔案權限</p>
     <fieldset>
       <table>
         <tr>
-          <th align="left"><b>Directories</b></th>
-          <th align="left"><b>Status</b></th>
+          <th align="left"><b>文件夾</b></th>
+          <th align="left"><b>狀態</b></th>
         </tr>
         <tr>
           <td><?php echo $cache . '/'; ?></td>
-          <td><?php echo is_writable($cache) ? '<span class="good">Writable</span>' : '<span class="bad">Unwritable</span>'; ?></td>
+          <td><?php echo is_writable($cache) ? '<span class="good">可寫入</span>' : '<span class="bad">不能寫入</span>'; ?></td>
         </tr>
         <tr>
           <td><?php echo $logs . '/'; ?></td>
-          <td><?php echo is_writable($logs) ? '<span class="good">Writable</span>' : '<span class="bad">Unwritable</span>'; ?></td>
+          <td><?php echo is_writable($logs) ? '<span class="good">可寫入</span>' : '<span class="bad">不能寫入</span>'; ?></td>
         </tr>
         <tr>
           <td><?php echo $image . '/'; ?></td>
-          <td><?php echo is_writable($image) ? '<span class="good">Writable</span>' : '<span class="bad">Unwritable</span>'; ?></td>
+          <td><?php echo is_writable($image) ? '<span class="good">可寫入</span>' : '<span class="bad">不能寫入</span>'; ?></td>
         </tr>
         <tr>
           <td><?php echo $image_cache . '/'; ?></td>
-          <td><?php echo is_writable($image_cache) ? '<span class="good">Writable</span>' : '<span class="bad">Unwritable</span>'; ?></td>
+          <td><?php echo is_writable($image_cache) ? '<span class="good">可寫入</span>' : '<span class="bad">不能寫入</span>'; ?></td>
         </tr>
         <tr>
           <td><?php echo $image_data . '/'; ?></td>
-          <td><?php echo is_writable($image_data) ? '<span class="good">Writable</span>' : '<span class="bad">Unwritable</span>'; ?></td>
+          <td><?php echo is_writable($image_data) ? '<span class="good">可寫入</span>' : '<span class="bad">不能寫入</span>'; ?></td>
         </tr>
         <tr>
           <td><?php echo $download . '/'; ?></td>
-          <td><?php echo is_writable($download) ? '<span class="good">Writable</span>' : '<span class="bad">Unwritable</span>'; ?></td>
+          <td><?php echo is_writable($download) ? '<span class="good">可寫入</span>' : '<span class="bad">不能寫入</span>'; ?></td>
         </tr>
       </table>
     </fieldset>
     <div class="buttons">
-      <div class="left"><a href="<?php echo $back; ?>" class="button">Back</a></div>
+      <div class="left"><a href="<?php echo $back; ?>" class="button">回上一步</a></div>
       <div class="right">
-        <input type="submit" value="Continue" class="button" />
+        <input type="submit" value="下一步" class="button" />
       </div>
     </div>
   </form>

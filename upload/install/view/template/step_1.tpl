@@ -1,17 +1,21 @@
 <?php echo $header; ?>
-<h1>Step 1 - License</h1>
+<h1>步驟 1 - 授權條款</h1>
 <div id="column-right">
   <ul>
-    <li><b>License</b></li>
-    <li>Pre-Installation</li>
-    <li>Configuration</li>
-    <li>Finished</li>
+    <li><b>授權</b></li>
+    <li>系統</li>
+    <li>配置</li>
+    <li>完成</li>
   </ul>
+	<div style="text-align:center;margin-top:150px;border:#555555 1px solid;padding:10px 0;"><a href="http://www.dnono.com/" title="dnono" ><img src="view/image/dnono.png" alt="dnono" title="dnono" width="140" height="50" /></a><br /><br />
+<a href="http://www.dnono.com/" title="dnono" > 中文版提供者</a>&nbsp;&nbsp;
+<a href="http://blog.dnono.com/" title="dnono" > 部落格 </a>
+   </div>
 </div>
 <div id="content">
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <div class="terms">
-      <h3>GNU GENERAL PUBLIC LICENSE</h3>
+      <h3>GNU 通用公共授權條款</h3>
       <p>Version 3, 29 June 2007</p>
       <p>Copyright &copy; 2007 Free Software Foundation, Inc. &lt;http://fsf.org/&gt;</p>
       <p> Everyone is permitted to copy and distribute verbatim copies
@@ -578,7 +582,7 @@
     </div>
     <div class="buttons">
       <div class="right">
-        <input type="submit" value="Continue" class="button" />
+        <input type="submit" value="下一步" class="button" />
       </div>
     </div>
   </form>
